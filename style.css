@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.login{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 15px;
+}
+.login h1::after{
+    content: '';
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    background: #d4542d;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.inputfield{
+    background: bisque;
+    margin: 15px 0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 17px 15px;
+}
+form p{
+    text-align: center; 
+    font-size: 13px;
+}
+form p a{
+    color: #d4542d;
+    text-decoration: none;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    flex-basis: 47%;
+    background: #d4542d;
+    color: bisque;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 1s;
+}
+.inputbox{
+    height: 220px;
+}
+.buttons button.disable{
+    background-color: rgb(161, 161, 142);
+    color: rgb(77, 77, 67);
+}
